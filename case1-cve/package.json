@@ -1,0 +1,8 @@
+{
+  "name": "demo-case1-cve",
+  "version": "1.0.0",
+  "description": "[DEMO] Case 1: Known CVE - lodash prototype pollution",
+  "dependencies": {
+    "lodash": "4.17.4"
+  }
+}

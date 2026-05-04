@@ -1,0 +1,8 @@
+{
+  "name": "demo-case3-sabotage",
+  "version": "1.0.0",
+  "description": "[DEMO] Case 3: Maintainer sabotage - colors infinite loop (Jan 2022)",
+  "dependencies": {
+    "colors": "1.4.44-liberty-2"
+  }
+}

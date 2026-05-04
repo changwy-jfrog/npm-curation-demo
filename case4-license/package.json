@@ -1,0 +1,8 @@
+{
+  "name": "demo-case4-license",
+  "version": "1.0.0",
+  "description": "[DEMO] Case 4: Transitive GPL license - @graphql-tools/schema pulls in smartwrap (GPL-2.0)",
+  "dependencies": {
+    "@graphql-tools/schema": "7.1.5"
+  }
+}
