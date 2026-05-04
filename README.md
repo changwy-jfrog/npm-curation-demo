@@ -4,7 +4,7 @@
 
 ```bash
 # 최초 1회만 실행 (이후 재로그인 불필요)
-npm login --registry=https://solenglatest.jfrog.io/artifactory/api/npm/changwy-npm-virtual/ --auth-type=web
+npm login --registry=https://<YOUR-ARTIFACTORY-URL>/artifactory/api/npm/<YOUR-NPM-VIRTUAL-REPO>/ --auth-type=web
 ```
 
 `.npmrc` 가 이미 Curation이 적용된 `changwy-npm-virtual` 을 바라보도록 설정되어 있습니다.
