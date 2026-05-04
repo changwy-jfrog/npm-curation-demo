@@ -29,22 +29,22 @@ npm install
 
 ---
 
-## Case 2. 신규 패키지 정책 차단 — `swiper@12.1.4`
+## Case 2. 신규 패키지 정책 차단 — `vite@8.0.9`
 
-**스토리**: "새로 나온 swiper 버전 써보려고 했는데..." (2026-04-29 퍼블리시, 14일 미만)
+**스토리**: "새로 나온 vite 버전 써보려고 했는데..." (2026-04-20 퍼블리시, 30일 미만)
 
 ```bash
 cd case2-new-package
 npm install
 ```
 
-**예상 결과**: `403 Forbidden` — package published 5 days ago, violates minimum age policy (14 days)
+**예상 결과**: `403 Forbidden` — package published 16 days ago, violates minimum age policy (30 days)
 
 **데모 포인트**:
-- Curation 정책: "퍼블리시된 지 14일 미만 패키지 차단"
+- Curation 정책: "퍼블리시된 지 30일 미만 패키지 차단"
 - Activity Log에서 차단 이유: 퍼블리시 날짜 + 정책 기준 표시
-- **핵심 메시지**: "악성 패키지의 90%는 퍼블리시 직후 수 시간 내 배포됨 — 14일 대기는 가장 단순하고 강력한 방어"
-- 안전 버전(`swiper@11.2.8` 등 오래된 버전)으로 바꾸면 정상 설치됨
+- **핵심 메시지**: "악성 패키지의 90%는 퍼블리시 직후 수 시간 내 배포됨 — 30일 대기는 가장 단순하고 강력한 방어"
+- 안전 버전(`vite@7.0.0` 등 오래된 버전)으로 바꾸면 정상 설치됨
 
 ---
 
@@ -106,6 +106,6 @@ npm install
 | 1 | Case 1 — lodash CVE | "알려진 취약점은 설치 자체가 안 됩니다" |
 | 2 | Case 4 — License transitive | "직접 의존성만 보면 안전해 보이지만..." |
 | 3 | Case 3 — colors 사보타주 | "메인테이너 신뢰만으론 부족합니다" (임팩트 절정) |
-| 4 | Case 2 — swiper 신규 패키지 | "악성 패키지의 90%는 퍼블리시 직후 배포됩니다" (정책 기반 방어) |
+| 4 | Case 2 — vite 신규 패키지 | "악성 패키지의 90%는 퍼블리시 직후 배포됩니다" (정책 기반 방어) |
 
 총 소요 시간: 약 15~20분
