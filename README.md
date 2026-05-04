@@ -29,21 +29,22 @@ npm install
 
 ---
 
-## Case 2. 공급망 멀웨어 차단 — `axios@1.14.1`
+## Case 2. 신규 패키지 정책 차단 — `zod@4.4.2`
 
-**스토리**: "최신 axios로 업데이트하라고 해서 했는데..." (2026년 3월 31일 북한 연계 공격)
+**스토리**: "새로 나온 zod 버전 써보려고 했는데..." (2026-05-01 퍼블리시, 14일 미만)
 
 ```bash
-cd case2-malware
+cd case2-new-package
 npm install
 ```
 
-**예상 결과**: `403 Forbidden` — known malicious version (RAT dropper via `plain-crypto-js` postinstall)
+**예상 결과**: `403 Forbidden` — package published 5 days ago, violates minimum age policy (14 days)
 
 **데모 포인트**:
-- 위협 인텔 출처 표시 (JFrog Security Research / Microsoft / Google)
-- 안전 버전(`axios@1.14.0`)으로 다운그레이드 → 정상 설치
-- **선택**: Curation 정책 일시 해제 후 `npm install` → `plain-crypto-js`가 transitive로 들어오는 것 확인 → 다시 켜기
+- Curation 정책: "퍼블리시된 지 14일 미만 패키지 차단"
+- Activity Log에서 차단 이유: 퍼블리시 날짜 + 정책 기준 표시
+- **핵심 메시지**: "악성 패키지의 90%는 퍼블리시 직후 수 시간 내 배포됨 — 14일 대기는 가장 단순하고 강력한 방어"
+- 안전 버전(`zod@3.24.2` 등 오래된 버전)으로 바꾸면 정상 설치됨
 
 ---
 
@@ -105,6 +106,6 @@ npm install
 | 1 | Case 1 — lodash CVE | "알려진 취약점은 설치 자체가 안 됩니다" |
 | 2 | Case 4 — License transitive | "직접 의존성만 보면 안전해 보이지만..." |
 | 3 | Case 3 — colors 사보타주 | "메인테이너 신뢰만으론 부족합니다" (임팩트 절정) |
-| 4 | Case 2 — axios 멀웨어 | "이게 지금 일어나고 있는 일입니다" (최신 사례 마무리) |
+| 4 | Case 2 — zod 신규 패키지 | "악성 패키지의 90%는 퍼블리시 직후 배포됩니다" (정책 기반 방어) |
 
 총 소요 시간: 약 15~20분
