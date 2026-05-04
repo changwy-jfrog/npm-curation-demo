@@ -1,8 +1,8 @@
 {
   "name": "demo-case2-new-package",
   "version": "1.0.0",
-  "description": "[DEMO] Case 2: New package policy - zod@4.4.2 published 2026-05-01 (within 14 days)",
+  "description": "[DEMO] Case 2: New package policy - swiper@12.1.4 published 2026-04-29 (within 14 days)",
   "dependencies": {
-    "zod": "4.4.2"
+    "swiper": "12.1.4"
   }
 }
