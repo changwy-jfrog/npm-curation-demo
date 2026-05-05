@@ -72,30 +72,28 @@ npm install
 
 ---
 
-## Case 4. License (Transitive) 차단 — `@graphql-tools/schema@7.1.5`
+## Case 4. License (Transitive) 차단 — `imagemin-pngquant@10.0.0`
 
-**스토리**: "MIT 패키지만 넣었는데, 5단계 깊이에 GPL이 숨어 있다면?" (실제 Gatsby 사건, 2021년)
+**스토리**: "이미지 최적화 플러그인 하나 넣었는데, GPL이 딸려 들어온다면?" (실제 gatsby-plugin-sharp 사건, 2019년)
 
 ```bash
 cd case4-license
 npm install
 ```
 
-**예상 결과**: `403 Forbidden` — `smartwrap@1.2.5` license GPL-2.0 violates policy
+**예상 결과**: `403 Forbidden` — `pngquant-bin@9.x` license GPL-3.0 violates policy
 
 **의존성 트리 시각화** (차단 전에 보여주면 임팩트 있음):
 ```
-@graphql-tools/schema@7.1.5
-└─ value-or-promise
-   └─ ...
-      └─ smartwrap@1.2.5  ← GPL-2.0 ❌
+imagemin-pngquant@10.0.0  ← MIT
+└─ pngquant-bin@9.x       ← GPL-3.0 ❌
 ```
 
 **데모 포인트**:
-- 직접 의존성은 모두 MIT — "보기엔 안전해 보입니다"
+- 직접 의존성은 MIT — "보기엔 안전해 보입니다"
 - Curation이 transitive 전체를 검사해서 라이선스 위반 감지
 - 정책 화면: License allowlist (MIT / Apache-2.0 / BSD-* / ISC), GPL/AGPL 차단
-- 안전 버전(`@graphql-tools/schema@7.1.3`)으로 핀 → 정상 설치
+- GPL 코드가 포함된 앱을 배포하면 소스코드 공개 의무 발생 → 법적 리스크
 
 ---
 

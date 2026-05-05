@@ -1,7 +1,13 @@
 {
   "name": "demo-case3-sabotage",
   "version": "1.0.0",
-  "description": "[DEMO] Case 3: Maintainer sabotage - colors infinite loop (Jan 2022)",
+  "description": "[DEMO] Case 3: Maintainer Sabotage - colors@1.4.44-liberty-2",
+  "details": [
+    "Package: colors@1.4.44-liberty-2",
+    "Incident: Intentionally poisoned by maintainer Marak Squires (Jan 2022)",
+    "Risk: Prints an infinite 'LIBERTY' loop that hangs processes and breaks CI/CD pipelines",
+    "Action: Blocked by JFrog Curation | Safe version: 1.4.0"
+  ],
   "dependencies": {
     "colors": "1.4.44-liberty-2"
   }

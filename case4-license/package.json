@@ -1,8 +1,14 @@
 {
   "name": "demo-case4-license",
   "version": "1.0.0",
-  "description": "[DEMO] Case 4: Transitive GPL license - @graphql-tools/schema pulls in smartwrap (GPL-2.0)",
+  "description": "[DEMO] Case 4: Transitive License Violation - imagemin-pngquant@10.0.0",
+  "details": [
+    "Package: imagemin-pngquant@10.0.0",
+    "Transitive dep: pngquant-bin (GPL-3.0)",
+    "Risk: GPL-3.0 requires open-sourcing the entire codebase when used in commercial products",
+    "Action: Blocked by JFrog Curation (transitive license scan)"
+  ],
   "dependencies": {
-    "@graphql-tools/schema": "7.1.5"
+    "imagemin-pngquant": "10.0.0"
   }
 }
