@@ -1,0 +1,6 @@
+{
+  "key": "changwy-go-virtual",
+  "rclass": "virtual",
+  "packageType": "go",
+  "repositories": "changwy-go-local,changwy-go-remote"
+}

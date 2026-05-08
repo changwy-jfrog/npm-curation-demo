@@ -1,0 +1,15 @@
+{
+  "name": "demo-case2-malicious",
+  "version": "1.0.0",
+  "description": "[DEMO] Case 2: Malicious Package — ansi-styles@6.2.2",
+  "details": [
+    "Ecosystem: npm",
+    "Package: ansi-styles@6.2.2",
+    "Condition: Flagged as malicious by JFrog Research",
+    "Risk: Executes unauthorized code at install/runtime, exfiltrates environment data",
+    "Action: Blocked by JFrog Curation | Safe version: ansi-styles@6.1.1"
+  ],
+  "dependencies": {
+    "ansi-styles": "6.2.2"
+  }
+}

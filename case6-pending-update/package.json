@@ -1,0 +1,15 @@
+{
+  "name": "demo-case6-pending-update",
+  "version": "1.0.0",
+  "description": "[DEMO] Case 6: Package Pending Update (npm) — rc@2.3.9",
+  "details": [
+    "Ecosystem: npm",
+    "Package: rc@2.3.9",
+    "Condition: Package Pending Update — newer versions exist but are pending security review",
+    "Risk: Using a version that has been superseded; may contain unpatched issues",
+    "Action: Blocked by JFrog Curation | Safe version: rc@1.2.7"
+  ],
+  "dependencies": {
+    "rc": "2.3.9"
+  }
+}

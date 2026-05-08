@@ -1,0 +1,7 @@
+{
+  "key": "changwy-maven-virtual",
+  "rclass": "virtual",
+  "packageType": "maven",
+  "repoLayoutRef": "maven-2-default",
+  "repositories": "changwy-maven-local,changwy-maven-remote"
+}

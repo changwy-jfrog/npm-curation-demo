@@ -1,0 +1,15 @@
+{
+  "name": "demo-case8-license",
+  "version": "1.0.0",
+  "description": "[DEMO] Case 8: Transitive License Violation — imagemin-pngquant@10.0.0",
+  "details": [
+    "Ecosystem: npm",
+    "Package: imagemin-pngquant@10.0.0 (MIT)",
+    "Transitive dependency: pngquant-bin@9.x (GPL-3.0)",
+    "Risk: GPL-3.0 requires open-sourcing your entire codebase when distributed commercially",
+    "Action: Blocked by JFrog Curation (transitive license scan)"
+  ],
+  "dependencies": {
+    "imagemin-pngquant": "10.0.0"
+  }
+}

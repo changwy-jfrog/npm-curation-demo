@@ -1,0 +1,7 @@
+# [DEMO] Case 6: Package Pending Update (PyPI) — google-cloud-trace==1.19.0
+# Ecosystem: PyPI
+# Package: google-cloud-trace==1.19.0
+# Condition: Package Pending Update — version under security review
+# Risk: Using a version that has been superseded by a safer release
+# Action: Blocked by JFrog Curation | Safe version: google-cloud-trace==1.18.0
+google-cloud-trace==1.19.0

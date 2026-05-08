@@ -1,0 +1,15 @@
+{
+  "name": "demo-case3-immature-7d",
+  "version": "1.0.0",
+  "description": "[DEMO] Case 3: Immature 7-Day — @aws-sdk/client-eventbridge@3.1039.0",
+  "details": [
+    "Ecosystem: npm",
+    "Package: @aws-sdk/client-eventbridge@3.1039.0",
+    "Condition: Published less than 7 days ago (Immature 7 Day policy)",
+    "Risk: No community vetting yet — prime window for supply chain attacks",
+    "Action: Blocked by JFrog Curation | Safe version: @aws-sdk/client-eventbridge@3.1037.0"
+  ],
+  "dependencies": {
+    "@aws-sdk/client-eventbridge": "3.1039.0"
+  }
+}

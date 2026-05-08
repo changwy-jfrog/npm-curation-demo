@@ -1,0 +1,6 @@
+{
+  "key": "changwy-pypi-virtual",
+  "rclass": "virtual",
+  "packageType": "pypi",
+  "repositories": "changwy-pypi-local,changwy-pypi-remote"
+}

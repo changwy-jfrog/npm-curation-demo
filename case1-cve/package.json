@@ -1,12 +1,13 @@
 {
   "name": "demo-case1-cve",
   "version": "1.0.0",
-  "description": "[DEMO] Case 1: Known CVE - lodash@4.17.23",
+  "description": "[DEMO] Case 1: Known CVE — lodash@4.17.23",
   "details": [
+    "Ecosystem: npm",
     "Package: lodash@4.17.23",
     "CVE: CVE-2020-8203 (Prototype Pollution, CVSS 7.4)",
     "Risk: Attackers can inject malicious properties into Object.prototype via _.merge / _.set, compromising application logic",
-    "Action: Blocked by JFrog Curation | Safe version: 4.18.1"
+    "Action: Blocked by JFrog Curation | Safe version: lodash@4.17.21"
   ],
   "dependencies": {
     "lodash": "4.17.23"

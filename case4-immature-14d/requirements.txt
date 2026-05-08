@@ -1,0 +1,7 @@
+# [DEMO] Case 4: Immature 14-Day (PyPI) — anthropic==0.97.0
+# Ecosystem: PyPI
+# Package: anthropic==0.97.0
+# Condition: Published less than 14 days ago (Package version is less than 14 days old)
+# Risk: Very recent release of the Anthropic SDK — unvetted by community
+# Action: Blocked by JFrog Curation | Safe version: anthropic==0.96.0
+anthropic==0.97.0

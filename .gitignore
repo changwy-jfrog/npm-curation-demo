@@ -1,3 +1,24 @@
+# Node
 node_modules/
 package-lock.json
-.npmrc
+
+# Maven
+target/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+
+# Go
+vendor/
+
+# JFrog CLI per-folder configs (use --global instead)
+.jfrog/
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store

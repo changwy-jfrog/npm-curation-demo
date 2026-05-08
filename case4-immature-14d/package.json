@@ -1,0 +1,15 @@
+{
+  "name": "demo-case4-immature-14d",
+  "version": "1.0.0",
+  "description": "[DEMO] Case 4: Immature 14-Day (npm) — cssnano@7.1.7",
+  "details": [
+    "Ecosystem: npm",
+    "Package: cssnano@7.1.7",
+    "Condition: Published less than 14 days ago (Package version is less than 14 days old)",
+    "Risk: Unvetted release in a widely-used CSS minifier — high blast radius",
+    "Action: Blocked by JFrog Curation | Safe version: cssnano@7.1.5"
+  ],
+  "dependencies": {
+    "cssnano": "7.1.7"
+  }
+}

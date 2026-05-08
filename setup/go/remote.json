@@ -1,0 +1,7 @@
+{
+  "key": "changwy-go-remote",
+  "rclass": "remote",
+  "packageType": "go",
+  "url": "https://goproxy.io",
+  "vcsType": "GIT"
+}
