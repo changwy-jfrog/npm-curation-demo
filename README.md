@@ -1,7 +1,7 @@
 # JFrog Curation Multi-Ecosystem Demo
 
 JFrog Curation이 **npm / Maven / PyPI / Go** 4개 에코시스템에서 동일한 정책으로 악성·위험 패키지를 차단하는 것을 시연합니다.  
-모든 예제는 [SolEng CoE CVS Newsletter]에 기록된 실제 프로덕션 차단 사례입니다.
+모든 예제는 실제 프로덕션 차단 사례를 기반으로 구성되었습니다.
 
 ---
 
